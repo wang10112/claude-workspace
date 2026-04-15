@@ -1,0 +1,1 @@
+- [Obsidian 笔记工作流](feedback_obsidian_workflow.md) — 创建笔记时自动保存到知识库并按规范整理
