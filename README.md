@@ -57,6 +57,8 @@
 - **重构** (refactoring) - 代码重构、结构优化、技术债务清理
 - **审查** (review) - 代码和文档审查
 - **验证** (verification) - 质量验证和测试
+- **Git 工作流** (git-workflow) - 分支管理、提交规范、PR 流程
+- **安全审查** (security-review) - 漏洞扫描、安全最佳实践
 
 ### 规划和研究
 - **规划** (planning) - 项目规划和任务分解

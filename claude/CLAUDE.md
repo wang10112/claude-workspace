@@ -34,6 +34,8 @@
 - 重构任务 → `skills/refactoring/`
 - 审查任务 → `skills/review/`
 - 验证任务 → `skills/verification/`
+- Git 操作 → `skills/git-workflow/`
+- 安全审查 → `skills/security-review/`
 
 ### 规划和研究
 - 规划任务 → `skills/planning/`
@@ -64,6 +66,8 @@
 - `shared/memory/testing-memory.md` - 测试模块记忆
 - `shared/memory/debugging-memory.md` - 调试模块记忆
 - `shared/memory/refactoring-memory.md` - 重构模块记忆
+- `shared/memory/git-workflow-memory.md` - Git 工作流记忆
+- `shared/memory/security-review-memory.md` - 安全审查记忆
 - `shared/memory/formal-writing-memory.md` - 正式写作模块记忆
 - `shared/memory/planning-memory.md` - 规划模块记忆
 - `shared/memory/research-memory.md` - 研究模块记忆
@@ -77,6 +81,8 @@
 - `testing.md` - 测试工作流
 - `debugging.md` - 调试工作流
 - `refactoring.md` - 重构工作流
+- `git-workflow.md` - Git 工作流
+- `security-review.md` - 安全审查流程
 - `formal-writing.md` - 正式文档写作流程
 - `doc-polish.md` - 文档润色流程
 - `research.md` - 研究工作流
