@@ -28,15 +28,20 @@
 
 根据任务类型选择合适的技能：
 
-### 通用任务
-- 规划任务 → `skills/planning/`
-- 写作任务 → `skills/writing/`
+### 开发任务
+- 测试任务 → `skills/testing/`
+- 调试任务 → `skills/debugging/`
+- 重构任务 → `skills/refactoring/`
 - 审查任务 → `skills/review/`
-- 研究任务 → `skills/research/`
 - 验证任务 → `skills/verification/`
 
-### 正式写作
+### 规划和研究
+- 规划任务 → `skills/planning/`
+- 研究任务 → `skills/research/`
+
+### 写作任务
 - 正式文档写作 → `skills/formal-writing/`
+- 通用写作 → `skills/writing/`
 - 内部沟通文档 → `skills/internal-comms/`
 - 公文格式化 → `skills/official-doc-format/`
 - 中文润色 → `skills/humanizer-zh/`
@@ -56,6 +61,9 @@
 
 - `shared/memory/workspace-memory.md` - 工作区长期记忆
 - `shared/memory/user-preferences.md` - 用户偏好
+- `shared/memory/testing-memory.md` - 测试模块记忆
+- `shared/memory/debugging-memory.md` - 调试模块记忆
+- `shared/memory/refactoring-memory.md` - 重构模块记忆
 - `shared/memory/formal-writing-memory.md` - 正式写作模块记忆
 - `shared/memory/planning-memory.md` - 规划模块记忆
 - `shared/memory/research-memory.md` - 研究模块记忆
@@ -66,6 +74,9 @@
 
 复杂任务参考 `shared/workflows/` 中的工作流定义：
 
+- `testing.md` - 测试工作流
+- `debugging.md` - 调试工作流
+- `refactoring.md` - 重构工作流
 - `formal-writing.md` - 正式文档写作流程
 - `doc-polish.md` - 文档润色流程
 - `research.md` - 研究工作流
