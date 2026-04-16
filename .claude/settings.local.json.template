@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git diff *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(npm test)",
+      "Bash(npm run *)"
+    ]
+  },
+  "hooks": {
+    "user-prompt-submit-hook": ""
+  }
+}

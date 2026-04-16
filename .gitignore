@@ -1,5 +1,7 @@
 # Claude 本地配置
-.claude/
+.claude/settings.local.json
+.claude/history.jsonl
+!.claude/settings.local.json.template
 
 # 输出和临时文件
 output/
