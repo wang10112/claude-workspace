@@ -1,33 +1,210 @@
-# Claude 工作区
+# 🚀 Claude Code 工作区
 
-一个生产就绪的 Claude Code 工作区，包含技能、工作流、记忆系统和最佳实践。
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Claude Code](https://img.shields.io/badge/Claude-Code-blue.svg)](https://claude.ai/code)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
-## 快速开始
+> 一个生产就绪的 Claude Code 工作区，包含 Hooks、规则、专业化 Agents、记忆系统和技能市场。
 
-### 首次使用
+## ✨ 核心特性
+
+- 🔧 **Hooks 系统** - 自动化质量检查和安全扫描
+- 📋 **规则系统** - TypeScript/Python 完整的测试和安全规范
+- 🤖 **专业化 Agents** - 6 个核心专家（代码审查、构建解决、数据库优化等）
+- 🧠 **记忆系统** - 自动捕获项目知识（patterns/decisions/learnings）
+- 📦 **技能市场** - 一键安装和更新第三方技能
+
+## 📊 项目统计
+
+- **代码行数**: 2,093
+- **文档行数**: 7,676
+- **总计**: 9,769 行
+- **完成度**: 100%
+
+## 🎯 5 分钟快速开始
+
+### 1. 克隆仓库
 
 ```bash
-# 1. 克隆仓库
 git clone https://github.com/wang10112/claude-workspace.git
 cd claude-workspace
-
-# 2. 运行配置脚本（自动配置 Memory）
-./setup.sh
-
-# 3. 在 VS Code 中打开工作区
-# Claude Code 会自动读取配置
 ```
 
-### 已有工作区更新
+### 2. 初始化 Submodules
 
 ```bash
-# 拉取最新配置
-git pull
-
-# Memory 会自动同步（通过符号链接）
+git submodule update --init --recursive
 ```
 
-## 核心组件
+### 3. 开始使用
+
+阅读 [QUICK-START.md](QUICK-START.md) 了解详细使用方法。
+
+**或者直接在 Claude Code 中说：**
+- "请审查这段代码"
+- "这个构建错误怎么解决？"
+- "如何优化这个查询？"
+
+## 🎯 5 分钟快速开始
+
+### 1. 克隆仓库
+
+```bash
+git clone https://github.com/wang10112/claude-workspace.git
+cd claude-workspace
+```
+
+### 2. 初始化 Submodules
+
+```bash
+git submodule update --init --recursive
+```
+
+### 3. 开始使用
+
+阅读 [QUICK-START.md](QUICK-START.md) 了解详细使用方法。
+
+**或者直接在 Claude Code 中说：**
+- "请审查这段代码"
+- "这个构建错误怎么解决？"
+- "如何优化这个查询？"
+
+## 🏗️ 架构概览
+
+```
+claude-workspace/
+├── claude/
+│   ├── agents/          # 12 个 agents（6 个专业化）
+│   ├── hooks/           # 3 个核心脚本
+│   ├── memory/          # 记忆系统（核心 + 自动）
+│   ├── rules/           # 9 个规则文件
+│   └── settings/        # 配置文件
+├── docs/                # 完整文档
+├── scripts/             # 工具脚本
+└── vendor/              # 第三方依赖
+```
+
+## 🔧 核心功能
+
+### Hooks 系统
+
+自动化质量检查和安全扫描：
+
+- **quality-gate.js** - 代码质量检查
+- **security-scan.js** - 安全扫描（OWASP Top 10）
+- **memory-capture.js** - 自动记忆捕获
+
+### 规则系统
+
+完整的代码规范：
+
+**通用规则：**
+- Security - 安全规范
+- Git Workflow - Git 工作流
+- Code Review - 代码审查
+
+**TypeScript 规则：**
+- Patterns - 最佳实践
+- Testing - 测试规范（Jest/Vitest）
+- Security - 安全规范（Zod/类型安全）
+
+**Python 规则：**
+- Patterns - 最佳实践
+- Testing - 测试规范（pytest）
+- Security - 安全规范（Pydantic）
+
+### 专业化 Agents
+
+6 个核心专家：
+
+| Agent | 功能 |
+|-------|------|
+| **code-reviewer** | 代码审查（置信度过滤 >80%） |
+| **security-reviewer** | 安全审查（OWASP Top 10） |
+| **architect** | 架构设计建议 |
+| **build-resolver** | 构建错误解决 |
+| **database-reviewer** | 数据库优化（N+1、索引） |
+| **performance-optimizer** | 性能优化（前端/后端） |
+
+### 记忆系统
+
+自动构建项目知识库：
+
+- **patterns/** - 代码模式和最佳实践
+- **decisions/** - 架构决策和技术选型
+- **learnings/** - 问题解决和经验教训
+
+### 技能市场
+
+一键安装第三方技能：
+
+```bash
+# 安装技能
+./scripts/install-skill.sh https://github.com/user/skill-repo.git
+
+# 更新技能
+./scripts/update-skills.sh
+```
+
+## 📚 文档
+
+- [QUICK-START.md](QUICK-START.md) - 5 分钟快速上手
+- [PROJECT-SUMMARY.md](docs/PROJECT-SUMMARY.md) - 项目完成总结
+- [UPGRADE-PLAN.md](docs/UPGRADE-PLAN.md) - 升级计划和历史
+- [SKILL-DEVELOPMENT.md](docs/SKILL-DEVELOPMENT.md) - 技能开发指南
+
+## 🌟 核心亮点
+
+### 1. 规则分层架构
+- **创新点**: common/languages 分层支持多语言
+- **价值**: 可扩展到 Go/Java/Rust 等语言
+
+### 2. 置信度过滤
+- **创新点**: code-reviewer 只报告 >80% 确信的问题
+- **价值**: 减少噪音，提高审查质量
+
+### 3. 自动记忆系统
+- **创新点**: 自动捕获 patterns/decisions/learnings
+- **价值**: 构建项目知识库
+
+### 4. 完整的测试和安全规范
+- **创新点**: TypeScript + Python 完整规范
+- **价值**: 统一的质量标准
+
+## 🆚 对比 everything-claude-code
+
+| 功能 | ECC | 本项目 |
+|------|-----|--------|
+| Hooks 系统 | ✅ | ✅ |
+| 规则分层 | ❌ | ✅ |
+| 测试规范 | ❌ | ✅ |
+| 安全规范 | ❌ | ✅ |
+| 专业化 Agents | 38 | 6 |
+| 自动记忆 | ❌ | ✅ |
+| 技能市场 | ✅ | ✅ |
+
+## 🤝 贡献
+
+欢迎贡献！请查看 [贡献指南](CONTRIBUTING.md)（待添加）。
+
+## 📄 许可证
+
+[MIT License](LICENSE)
+
+## 🙏 致谢
+
+- [Anthropic](https://www.anthropic.com/) - 提供强大的 Claude 模型
+- [everything-claude-code](https://github.com/cyanheads/everything-claude-code) - 提供参考和灵感
+- 开源社区 - 提供工具和最佳实践
+
+## 📞 联系方式
+
+- GitHub Issues: [提交问题](https://github.com/wang10112/claude-workspace/issues)
+- 讨论: [GitHub Discussions](https://github.com/wang10112/claude-workspace/discussions)
+
+---
+
+**⭐ 如果这个项目对你有帮助，请给个 Star！**
 
 - **claude/** - Claude 适配层（agents, commands, hooks, skills）
 - **claude/** - 共享能力层（skills, workflows, memory, playbooks）
