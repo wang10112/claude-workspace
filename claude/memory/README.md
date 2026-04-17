@@ -80,15 +80,26 @@ claude/memory/
 
 ## 记忆维护
 
-### 提升自动记忆到核心
-如果某个模式反复出现且稳定，提升到核心记忆：
+### 搜索记忆
+
+使用记忆索引工具：
 
 ```bash
-mv claude/memory/auto/patterns/important-pattern.md \
-   claude/memory/important-pattern-memory.md
+# 搜索关键词
+./scripts/memory-index.sh search "关键字"
+
+# 列出所有记忆
+./scripts/memory-index.sh list
+
+# 查看统计信息
+./scripts/memory-index.sh stats
+
+# 构建索引（自动更新）
+./scripts/memory-index.sh build
 ```
 
-### 搜索记忆
+### 手动搜索
+
 ```bash
 # 搜索所有记忆
 grep -r "关键字" claude/memory/

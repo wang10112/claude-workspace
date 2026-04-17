@@ -1,5 +1,9 @@
 {
+  "$schema": "https://raw.githubusercontent.com/anthropics/claude-code/main/schema/settings.schema.json",
+  "_comment": "这是本地配置模板，复制为 .claude/settings.local.json 使用",
+
   "permissions": {
+    "_comment": "权限配置 - 减少提示",
     "allow": [
       "Bash(git status)",
       "Bash(git log *)",
@@ -9,10 +13,47 @@
       "Bash(git push *)",
       "Bash(git pull *)",
       "Bash(npm test)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(ls *)",
+      "Bash(cat *)",
+      "Bash(grep *)",
+      "Bash(find *)"
     ]
   },
+
   "hooks": {
+    "_comment": "Hooks 配置示例",
+    "PreToolUse": [
+      {
+        "_comment": "代码质量检查 - 在写入/编辑文件前执行",
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node claude/hooks/scripts/quality-gate.js",
+            "description": "代码质量检查"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "_comment": "记忆捕获 - 在所有工具使用后执行",
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node claude/hooks/scripts/memory-capture.js",
+            "description": "自动记忆捕获"
+          }
+        ]
+      }
+    ],
     "user-prompt-submit-hook": ""
+  },
+
+  "model": {
+    "_comment": "模型配置 - 可选: opus, sonnet, haiku",
+    "default": "opus"
   }
 }
