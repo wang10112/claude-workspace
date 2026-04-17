@@ -1,10 +1,6 @@
 # 🚀 Claude Code 工作区
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude-Code-blue.svg)](https://claude.ai/code)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
-
-> 一个生产就绪的 Claude Code 工作区，包含 Hooks、规则、专业化 Agents、记忆系统和技能市场。
+> 个人生产就绪的 Claude Code 工作区，包含 Hooks、规则、专业化 Agents、记忆系统和技能市场。
 
 ## ✨ 核心特性
 
@@ -183,13 +179,9 @@ claude-workspace/
 | 自动记忆 | ❌ | ✅ |
 | 技能市场 | ✅ | ✅ |
 
-## 🤝 贡献
-
-欢迎贡献！请查看 [贡献指南](CONTRIBUTING.md)（待添加）。
-
 ## 📄 许可证
 
-[MIT License](LICENSE)
+[MIT License](LICENSE) - 个人使用
 
 ## 🙏 致谢
 
@@ -197,14 +189,9 @@ claude-workspace/
 - [everything-claude-code](https://github.com/cyanheads/everything-claude-code) - 提供参考和灵感
 - 开源社区 - 提供工具和最佳实践
 
-## 📞 联系方式
-
-- GitHub Issues: [提交问题](https://github.com/wang10112/claude-workspace/issues)
-- 讨论: [GitHub Discussions](https://github.com/wang10112/claude-workspace/discussions)
-
 ---
 
-**⭐ 如果这个项目对你有帮助，请给个 Star！**
+**个人工作区 - 持续优化中** 🚀
 
 - **claude/** - Claude 适配层（agents, commands, hooks, skills）
 - **claude/** - 共享能力层（skills, workflows, memory, playbooks）
