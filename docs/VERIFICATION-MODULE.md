@@ -9,15 +9,15 @@
 ## 在 `project` 中的主位置
 
 - workflow:
-  - `shared/workflows/verification.md`
+  - `claude/workflows/verification.md`
 - shared skills:
-  - `shared/skills/verification/`
+  - `claude/skills/verification/`
 - shared subagents:
-  - `shared/subagents/verifier.md`
+  - `claude/agents/verifier.md`
 - playbook:
-  - `shared/playbooks/verification-playbook.md`
+  - `claude/playbooks/verification-playbook.md`
 - memory:
-  - `shared/memory/verification-memory.md`
+  - `claude/memory/verification-memory.md`
 - example:
   - `examples/verification/README.md`
   - `examples/verification/SOURCE-MAP.md`

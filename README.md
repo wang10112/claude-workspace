@@ -30,7 +30,8 @@ git pull
 ## 核心组件
 
 - **claude/** - Claude 适配层（agents, commands, hooks, skills）
-- **shared/** - 共享能力层（skills, workflows, memory, playbooks）
+- **claude/** - 共享能力层（skills, workflows, memory, playbooks）
+- **vendor/** - 第三方依赖（Anthropic 官方 skills）
 - **memory/** - Memory 配置文件（自动同步到 ~/.claude/）
 - **docs/** - 架构文档和使用指南
 - **examples/** - 示例和学习资源
@@ -61,7 +62,7 @@ git push
 
 ### 两层模型
 
-1. **共享意图层** (`shared/`)
+1. **共享意图层** (`claude/`)
    - 中立的工作流、技能、角色定义
    - 长期记忆和用户偏好
    - 可复用的 playbooks 和模板
@@ -74,9 +75,9 @@ git push
 
 ### 设计原则
 
-- **共享优先** - 能力定义在 `shared/` 中维护
+- **共享优先** - 能力定义在 `claude/` 中维护
 - **适配分离** - Claude 特定配置在 `claude/` 中
-- **记忆持久化** - 使用 `shared/memory/` 存储长期记忆
+- **记忆持久化** - 使用 `claude/memory/` 存储长期记忆
 - **技能驱动** - 以技能为主要工作流单元
 
 ## 推荐阅读
@@ -136,26 +137,34 @@ ls -la ~/.claude/projects/-home-zhang-workspace-claude-workspace/memory
 - **研究** (research) - 信息收集和分析
 
 ### 写作能力
-- **正式写作** (formal-writing) - 公文、报告等正式文档写作
-- **通用写作** (writing) - 通用文档写作
-- **内部沟通** (internal-comms) - 内部沟通文档
-- **中文润色** (humanizer-zh) - 中文文本润色
+
+**工作流层：**
+- **正式文档写作** (formal-writing) - 完整的引导式工作流，包含上下文收集、迭代开发、读者验证
+- **快速写作** (writing) - 轻量级快速写作
+
+**工具层：**
+- **公文格式化** (official-doc-format) - 中国公文格式标准化
+
+**特殊工具（按需使用）：**
+- **去除 AI 风格** (humanizer-zh) - 移除 AI 味道（会降低可读性，仅在明确要求时使用）
+
+详见：[docs/SKILLS-GUIDE.md](docs/SKILLS-GUIDE.md)
 
 ## 维护指南
 
 ### 添加新技能
 
-1. 在 `shared/skills/` 创建技能定义
+1. 在 `claude/skills/` 创建技能定义
 2. 在 `claude/skills/` 创建 Claude 包装器
 3. 更新相关文档
 
 ### 更新记忆
 
-直接编辑 `shared/memory/` 中的 Markdown 文件
+直接编辑 `claude/memory/` 中的 Markdown 文件
 
 ### 添加工作流
 
-在 `shared/workflows/` 创建新的工作流定义
+在 `claude/workflows/` 创建新的工作流定义
 
 详细说明请参考 [docs/ADDING-SHARED-SKILLS.md](docs/ADDING-SHARED-SKILLS.md)
 

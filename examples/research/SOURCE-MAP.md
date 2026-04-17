@@ -8,12 +8,12 @@
 
 | 能力面 | 当前位置 |
 |---|---|
-| research workflow | `shared/workflows/research.md` |
-| research skill | `shared/skills/research/SKILL.md` |
-| researcher role | `shared/subagents/researcher.md` |
+| research workflow | `claude/workflows/research.md` |
+| research skill | `claude/skills/research/SKILL.md` |
+| researcher role | `claude/subagents/researcher.md` |
 | module doc | `docs/RESEARCH-MODULE.md` |
-| playbook | `shared/playbooks/research-playbook.md` |
-| memory | `shared/memory/research-memory.md` |
+| playbook | `claude/playbooks/research-playbook.md` |
+| memory | `claude/memory/research-memory.md` |
 | example | `examples/research/README.md` |
 
 ## 结论

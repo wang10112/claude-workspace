@@ -9,18 +9,18 @@
 ## 在 `project` 中的主位置
 
 - workflow:
-  - `shared/workflows/review.md`
-  - `shared/workflows/verification.md`
+  - `claude/workflows/review.md`
+  - `claude/workflows/verification.md`
 - shared skills:
-  - `shared/skills/review/`
-  - `shared/skills/verification/`
+  - `claude/skills/review/`
+  - `claude/skills/verification/`
 - shared subagents:
-  - `shared/subagents/reviewer.md`
-  - `shared/subagents/verifier.md`
+  - `claude/agents/reviewer.md`
+  - `claude/agents/verifier.md`
 - playbook:
-  - `shared/playbooks/review-playbook.md`
+  - `claude/playbooks/review-playbook.md`
 - memory:
-  - `shared/memory/review-memory.md`
+  - `claude/memory/review-memory.md`
 - example:
   - `examples/review/README.md`
   - `examples/review/SOURCE-MAP.md`

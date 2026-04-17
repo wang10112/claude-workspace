@@ -13,7 +13,9 @@ WORKSPACE_MEMORY="$WORKSPACE_DIR/memory"
 
 # 计算 Claude Memory 路径（基于工作区路径）
 # Claude 使用项目路径的哈希来组织 Memory
-PROJECT_HASH="-home-zhang-workspace-claude-workspace"
+# 自动计算项目路径的哈希值
+PROJECT_PATH_NORMALIZED=$(echo "$WORKSPACE_DIR" | sed 's|//*|/|g' | sed 's|/$||')
+PROJECT_HASH=$(echo "$PROJECT_PATH_NORMALIZED" | sed 's|/|-|g' | sed 's|^-||')
 CLAUDE_MEMORY_DIR="$HOME/.claude/projects/$PROJECT_HASH/memory"
 
 echo "📁 工作区路径: $WORKSPACE_DIR"

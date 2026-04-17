@@ -7,9 +7,9 @@
 ## 共享来源
 
 - workflow:
-  - `shared/workflows/obsidian-knowledge-maintenance.md`
+  - `claude/workflows/obsidian-knowledge-maintenance.md`
 - memory:
-  - `shared/memory/obsidian-memory.md`
+  - `claude/memory/obsidian-memory.md`
 
 ## Codex 路径
 

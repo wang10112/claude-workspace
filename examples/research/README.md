@@ -7,17 +7,17 @@
 ## 共享来源
 
 - workflow:
-  - `shared/workflows/research.md`
+  - `claude/workflows/research.md`
 - 模块说明:
   - `docs/RESEARCH-MODULE.md`
 - skill:
-  - `shared/skills/research/`
+  - `claude/skills/research/`
 - subagent:
-  - `shared/subagents/researcher.md`
+  - `claude/subagents/researcher.md`
 - playbook:
-  - `shared/playbooks/research-playbook.md`
+  - `claude/playbooks/research-playbook.md`
 - memory:
-  - `shared/memory/research-memory.md`
+  - `claude/memory/research-memory.md`
 
 ## Claude 路径
 

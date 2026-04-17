@@ -1,3 +1,6 @@
-[submodule "skills"]
-	path = skills
+[submodule "vendor/anthropic-skills"]
+	path = vendor/anthropic-skills
 	url = https://github.com/anthropics/skills.git
+[submodule "vendor/skills/humanizer"]
+	path = vendor/skills/humanizer
+	url = https://github.com/blader/humanizer.git

@@ -7,20 +7,20 @@
 ## 共享来源
 
 - workflow:
-  - `shared/workflows/review.md`
-  - `shared/workflows/verification.md`
+  - `claude/workflows/review.md`
+  - `claude/workflows/verification.md`
 - 模块说明:
   - `docs/REVIEW-MODULE.md`
 - skills:
-  - `shared/skills/review/`
-  - `shared/skills/verification/`
+  - `claude/skills/review/`
+  - `claude/skills/verification/`
 - subagents:
-  - `shared/subagents/reviewer.md`
-  - `shared/subagents/verifier.md`
+  - `claude/subagents/reviewer.md`
+  - `claude/subagents/verifier.md`
 - playbook:
-  - `shared/playbooks/review-playbook.md`
+  - `claude/playbooks/review-playbook.md`
 - memory:
-  - `shared/memory/review-memory.md`
+  - `claude/memory/review-memory.md`
 
 ## Claude 路径
 

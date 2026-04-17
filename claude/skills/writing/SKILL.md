@@ -1,6 +1,6 @@
 ---
 name: writing
-description: Draft or rewrite structured documents across repository modules. Use when a new draft is needed, when existing content needs rewriting, or when converting notes or raw material into a finished document. Do not use for formatting-only tasks — route those to official-doc-format instead.
+description: Neutral writing skill for structured drafting and rewriting across repository modules.
 ---
 
 # Writing
@@ -26,18 +26,10 @@ Produce clear, audience-aware writing from source material without inventing fac
 - readable wording
 - audience-fit framing
 - preserved factual meaning
+- use MECE structure where it improves clarity and reduces overlap
 
 ## Boundary Rules
 
 - do not invent missing facts
-- if the task is formatting-only, route to official-doc-format instead of rewriting
-
-## Shared Source
-
-`shared/skills/writing/SKILL.md`
-
-## Collaboration Pattern
-
-- pair with `agents/writer.md` for role separation
-- pair with `skills/review/` after drafting
-- pair with `skills/humanizer-zh/` for final Chinese polish
+- if the task is formatting-only, route to formatting instead of rewriting
+- avoid stacking partially overlapping categories, paragraphs, or request items

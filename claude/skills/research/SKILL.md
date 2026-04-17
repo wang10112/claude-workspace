@@ -1,6 +1,6 @@
 ---
 name: research
-description: Collect and synthesize source-grounded facts before writing or review. Use when policy, documentation, current facts, or source comparison matters — not for general browsing. Hand off to writing or review once evidence is stable.
+description: Neutral research skill for source-grounded fact collection and synthesis before writing or review.
 ---
 
 # Research
@@ -29,12 +29,3 @@ Collect traceable facts and separate sourced evidence from interpretation.
 
 - do not present inference as quoted fact
 - hand off to writing or review once evidence is stable
-
-## Shared Source
-
-`shared/skills/research/SKILL.md`
-
-## Collaboration Pattern
-
-- pair with `agents/researcher.md`
-- hand off to `skills/writing/` or `skills/review/` once facts are confirmed

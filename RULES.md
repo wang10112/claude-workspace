@@ -9,15 +9,10 @@
 
 ## 架构规则
 
-### 共享层 (shared/)
-- 存储中立的工作流、技能、角色、playbooks 和模板定义
-- 存储持久化的工作区记忆和用户偏好
+### 核心能力层 (claude/)
+- 存储所有工作流、技能、角色、playbooks、模板、记忆和配置
 - 是能力定义的唯一真实来源
-
-### Claude 适配层 (claude/)
-- 存储 Claude 原生格式的包装器、命令、钩子和设置
-- 将共享能力适配到 Claude Code 的运行方式
-- 不复制共享资产的完整内容
+- 包含：skills, workflows, memory, agents, playbooks, templates, commands, hooks, mcp, settings
 
 ### 文档层 (docs/)
 - 存储架构和设置指南
@@ -36,12 +31,15 @@
 - 存储临时参考资料
 - 不作为策略或长期记忆
 
+### 第三方依赖 (vendor/)
+- 存储外部依赖（如 Anthropic 官方技能库）
+- 使用 git submodule 管理，便于更新
+
 ## 维护规则
 
-- 如果共享资产变更，更新适配器而不是在工具树中复制新源文本
-- 持久化的工作区记忆存储在 `shared/memory/`，不要分散到临时文件
-- 不要将工具特定的运行规则放入 `shared/`
-- 不要将完整的共享资产复制到 Claude 层，除非必要
+- 所有能力定义统一在 `claude/` 目录维护
+- 持久化的工作区记忆存储在 `claude/memory/`，不要分散到临时文件
+- 保持单一真源原则，避免重复定义
 
 ## 编辑器集成规则
 
@@ -66,15 +64,14 @@
 
 ## 记忆持久化原则
 
-- 长期记忆存储在 `shared/memory/` 的 Markdown 文件中
+- 长期记忆存储在 `claude/memory/` 的 Markdown 文件中
 - 记忆文件可以被人类审阅和维护
 - 记忆文件按模块组织（workspace, user-preferences, formal-writing, planning 等）
 - 在执行任务前查阅相关记忆
 
 ## 扩展原则
 
-- 新增能力先在 `shared/` 定义
-- 然后在 `claude/` 创建适配器
+- 新增能力直接在 `claude/` 对应目录创建
 - 更新相关文档
 - 添加示例和测试
 

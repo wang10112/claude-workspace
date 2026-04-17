@@ -8,8 +8,8 @@
 
 | 能力面 | 当前位置 |
 |---|---|
-| shared workflow | `shared/workflows/obsidian-knowledge-maintenance.md` |
-| module memory | `shared/memory/obsidian-memory.md` |
+| shared workflow | `claude/workflows/obsidian-knowledge-maintenance.md` |
+| module memory | `claude/memory/obsidian-memory.md` |
 | codex wrapper | `codex/skills/obsidian/README.md` |
 | example | `examples/obsidian/README.md` |
 | installed skill | `~/.codex/skills/obsidian-markdown/SKILL.md` |

@@ -29,7 +29,7 @@ VS Code 不负责：
 3. Claude 相关工作看 `claude/`。
 4. Codex 相关工作看 `codex/`。
 5. 最终输出统一放到 `output/`。
-6. 长期记忆统一维护在 `shared/memory/`。
+6. 长期记忆统一维护在 `claude/memory/`。
 
 ## GitHub 分层
 

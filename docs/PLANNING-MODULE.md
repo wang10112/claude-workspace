@@ -9,15 +9,15 @@
 ## 在 `project` 中的主位置
 
 - workflow:
-  - `shared/skills/planning/`
+  - `claude/skills/planning/`
 - shared skills:
-  - `shared/skills/planning/`
+  - `claude/skills/planning/`
 - shared subagents:
-  - `shared/subagents/planner.md`
+  - `claude/agents/planner.md`
 - playbook:
-  - `shared/playbooks/planning-playbook.md`
+  - `claude/playbooks/planning-playbook.md`
 - memory:
-  - `shared/memory/planning-memory.md`
+  - `claude/memory/planning-memory.md`
 - example:
   - `examples/planning/README.md`
   - `examples/planning/SOURCE-MAP.md`

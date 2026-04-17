@@ -9,20 +9,20 @@
 ## 在 `project` 中的主位置
 
 - workflow:
-  - `shared/workflows/formal-writing.md`
-  - `shared/workflows/doc-polish.md`
+  - `claude/workflows/formal-writing.md`
+  - `claude/workflows/doc-polish.md`
 - shared skills:
-  - `shared/skills/internal-comms/`
-  - `shared/skills/official-doc-format/`
-  - `shared/skills/humanizer-zh/`
+  - `claude/skills/internal-comms/`
+  - `claude/skills/official-doc-format/`
+  - `claude/skills/humanizer-zh/`
 - playbooks:
-  - `shared/playbooks/formal-writing-playbook.md`
-  - `shared/playbooks/formal-writing-validation-set.md`
-  - `shared/playbooks/formal-writing-openai-workflow.md`
-  - `shared/playbooks/formal-writing-prompt-architecture.md`
-  - `shared/playbooks/formal-writing-skill-routing.md`
+  - `claude/playbooks/formal-writing-playbook.md`
+  - `claude/playbooks/formal-writing-validation-set.md`
+  - `claude/playbooks/formal-writing-openai-workflow.md`
+  - `claude/playbooks/formal-writing-prompt-architecture.md`
+  - `claude/playbooks/formal-writing-skill-routing.md`
 - memory:
-  - `shared/memory/formal-writing-memory.md`
+  - `claude/memory/formal-writing-memory.md`
 - example:
   - `examples/formal-writing/README.md`
   - `examples/formal-writing/SOURCE-MAP.md`

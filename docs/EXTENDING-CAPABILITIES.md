@@ -6,26 +6,26 @@
 
 ### 1. 定义共享层
 
-在 `shared/` 中创建能力定义：
+在 `claude/` 对应目录创建能力定义：
 
 ```bash
 # 1. 创建工作流定义
-shared/workflows/{module}.md
+claude/workflows/{module}.md
 
 # 2. 创建技能定义
-shared/skills/{module}/SKILL.md
+claude/skills/{module}/SKILL.md
 
 # 3. 创建或复用角色定义
-shared/subagents/{role}.md
+claude/agents/{role}.md
 
 # 4. 创建 playbook
-shared/playbooks/{module}-playbook.md
+claude/playbooks/{module}-playbook.md
 
 # 5. 创建模块记忆
-shared/memory/{module}-memory.md
+claude/memory/{module}-memory.md
 
 # 6. 创建模板（如需要）
-shared/templates/{module}-template.md
+claude/templates/{module}-template.md
 ```
 
 ### 2. 创建 Claude 适配层
@@ -73,19 +73,19 @@ examples/{module}/SOURCE-MAP.md
 
 ```bash
 # 工作流
-shared/workflows/testing.md
+claude/workflows/testing.md
 
 # 技能
-shared/skills/testing/SKILL.md
+claude/skills/testing/SKILL.md
 
 # 角色（复用或新建）
-shared/subagents/tester.md
+claude/agents/tester.md
 
 # Playbook
-shared/playbooks/testing-playbook.md
+claude/playbooks/testing-playbook.md
 
 # 记忆
-shared/memory/testing-memory.md
+claude/memory/testing-memory.md
 ```
 
 ### 步骤 2：Claude 适配层
@@ -145,7 +145,7 @@ examples/testing/SOURCE-MAP.md
 ## 设计约束
 
 ### 共享优先原则
-- `shared/` 是能力定义的唯一真实来源
+- `claude/` 是能力定义的唯一真实来源
 - `claude/` 只补适配层，不复制完整能力定义
 - 新模块必须遵循：
   - workflow 定义流程
@@ -170,10 +170,10 @@ examples/testing/SOURCE-MAP.md
 
 新模块应该包含：
 
-- [ ] `shared/workflows/{module}.md` - 工作流定义
-- [ ] `shared/skills/{module}/SKILL.md` - 技能定义
-- [ ] `shared/memory/{module}-memory.md` - 模块记忆
-- [ ] `shared/playbooks/{module}-playbook.md` - Playbook
+- [ ] `claude/workflows/{module}.md` - 工作流定义
+- [ ] `claude/skills/{module}/SKILL.md` - 技能定义
+- [ ] `claude/memory/{module}-memory.md` - 模块记忆
+- [ ] `claude/playbooks/{module}-playbook.md` - Playbook
 - [ ] `claude/skills/{module}/SKILL.md` - Claude 包装器
 - [ ] `docs/{MODULE}-MODULE.md` - 模块文档
 - [ ] `examples/{module}/README.md` - 示例

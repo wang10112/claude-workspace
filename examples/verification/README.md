@@ -7,17 +7,17 @@
 ## 共享来源
 
 - workflow:
-  - `shared/workflows/verification.md`
+  - `claude/workflows/verification.md`
 - 模块说明:
   - `docs/VERIFICATION-MODULE.md`
 - skill:
-  - `shared/skills/verification/`
+  - `claude/skills/verification/`
 - subagent:
-  - `shared/subagents/verifier.md`
+  - `claude/subagents/verifier.md`
 - playbook:
-  - `shared/playbooks/verification-playbook.md`
+  - `claude/playbooks/verification-playbook.md`
 - memory:
-  - `shared/memory/verification-memory.md`
+  - `claude/memory/verification-memory.md`
 
 ## Claude 路径
 

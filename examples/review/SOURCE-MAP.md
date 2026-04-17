@@ -8,12 +8,12 @@
 
 | 能力面 | 当前位置 |
 |---|---|
-| review workflow | `shared/workflows/review.md` |
-| verification workflow | `shared/workflows/verification.md` |
-| review skill | `shared/skills/review/SKILL.md` |
-| verification skill | `shared/skills/verification/SKILL.md` |
-| reviewer role | `shared/subagents/reviewer.md` |
-| verifier role | `shared/subagents/verifier.md` |
+| review workflow | `claude/workflows/review.md` |
+| verification workflow | `claude/workflows/verification.md` |
+| review skill | `claude/skills/review/SKILL.md` |
+| verification skill | `claude/skills/verification/SKILL.md` |
+| reviewer role | `claude/subagents/reviewer.md` |
+| verifier role | `claude/subagents/verifier.md` |
 | module doc | `docs/REVIEW-MODULE.md` |
 | example | `examples/review/README.md` |
 

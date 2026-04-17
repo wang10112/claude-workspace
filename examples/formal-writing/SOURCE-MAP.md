@@ -9,15 +9,15 @@
 | 旧来源 | `project` 中的新位置 |
 |---|---|
 | `AGENTS.md` 与 `RULES.md` | 根级 `AGENTS.md`、`RULES.md`，以及 `docs/FORMAL-WRITING-MODULE.md` |
-| 旧工作区中的 `OPENAI-WORKFLOW.md` 文档 | `shared/playbooks/formal-writing-openai-workflow.md` |
-| `notes/playbooks/formal-writing-playbooks.md` | `shared/playbooks/formal-writing-playbook.md` |
-| `notes/playbooks/formal-writing-validation-set.md` | `shared/playbooks/formal-writing-validation-set.md` |
-| `notes/playbooks/gpt54-formal-writing-prompts.md` | `shared/playbooks/formal-writing-prompt-architecture.md` |
-| `notes/skills-index.md` | `shared/playbooks/formal-writing-skill-routing.md` |
-| `skills/internal-comms.skill` | `shared/skills/internal-comms/SKILL.md` |
-| `skills/official-doc-format.skill` | `shared/skills/official-doc-format/SKILL.md` |
-| `skills/humanizer-zh.skill` | `shared/skills/humanizer-zh/SKILL.md` |
-| 稳定偏好与长期经验 | `shared/memory/` 下对应文件 |
+| 旧工作区中的 `OPENAI-WORKFLOW.md` 文档 | `claude/playbooks/formal-writing-openai-workflow.md` |
+| `notes/playbooks/formal-writing-playbooks.md` | `claude/playbooks/formal-writing-playbook.md` |
+| `notes/playbooks/formal-writing-validation-set.md` | `claude/playbooks/formal-writing-validation-set.md` |
+| `notes/playbooks/gpt54-formal-writing-prompts.md` | `claude/playbooks/formal-writing-prompt-architecture.md` |
+| `notes/skills-index.md` | `claude/playbooks/formal-writing-skill-routing.md` |
+| `skills/internal-comms.skill` | `claude/skills/internal-comms/SKILL.md` |
+| `skills/official-doc-format.skill` | `claude/skills/official-doc-format/SKILL.md` |
+| `skills/humanizer-zh.skill` | `claude/skills/humanizer-zh/SKILL.md` |
+| 稳定偏好与长期经验 | `claude/memory/` 下对应文件 |
 
 ## 旧工作区仍然有的价值
 

@@ -11,7 +11,7 @@
 
 ## 两层模型
 
-### 1. 共享意图层 (shared/)
+### 1. 核心能力层 (claude/)
 
 回答这些问题：
 
@@ -58,7 +58,7 @@
 ## 核心原则
 
 ### 共享优先
-- 能力定义在 `shared/` 维护
+- 能力定义在 `claude/` 维护
 - 是能力定义的唯一真实来源
 - 适配层只做格式转换，不复制完整内容
 
@@ -68,7 +68,7 @@
 - 遵循 Claude Code 的原生约定
 
 ### 记忆持久化
-- 长期记忆存储在 `shared/memory/`
+- 长期记忆存储在 `claude/memory/`
 - 使用 Markdown 文件
 - 可以被人类审阅和维护
 
@@ -88,10 +88,10 @@
 2. **维护规则**
    - 共享资产变更时，更新适配器
    - 不在适配层复制完整的共享资产
-   - 持久化记忆存储在 `shared/memory/`
+   - 持久化记忆存储在 `claude/memory/`
 
 3. **扩展规则**
-   - 新增能力先在 `shared/` 定义
+   - 新增能力在 `claude/` 定义
    - 然后在 `claude/` 创建适配器
    - 更新相关文档
    - 添加示例
@@ -109,10 +109,10 @@
 ### 模块结构
 
 每个模块包含：
-- `shared/skills/{module}/` - 技能定义
-- `shared/workflows/{module}.md` - 工作流定义
-- `shared/memory/{module}-memory.md` - 模块记忆
-- `shared/playbooks/{module}-playbook.md` - 可复用手册
+- `claude/skills/{module}/` - 技能定义
+- `claude/workflows/{module}.md` - 工作流定义
+- `claude/memory/{module}-memory.md` - 模块记忆
+- `claude/playbooks/{module}-playbook.md` - 可复用手册
 - `claude/skills/{module}/` - Claude 包装器
 - `examples/{module}/` - 示例和学习资源
 - `docs/{MODULE}-MODULE.md` - 模块文档
@@ -126,11 +126,11 @@ claude/CLAUDE.md (入口)
     ↓
 claude/skills/ (技能包装器)
     ↓
-shared/skills/ (技能定义)
+claude/skills/ (技能定义)
     ↓
-shared/workflows/ (工作流)
+claude/workflows/ (工作流)
     ↓
-shared/memory/ (记忆)
+claude/memory/ (记忆)
     ↓
 执行任务
     ↓

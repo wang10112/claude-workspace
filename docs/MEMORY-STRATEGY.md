@@ -10,7 +10,7 @@
 
 主目录：
 
-- `shared/memory/`
+- `claude/memory/`
 
 它负责保存：
 
@@ -47,14 +47,14 @@
 
 ## 当前文件记忆布局
 
-- `shared/memory/README.md`
-- `shared/memory/workspace-memory.md`
-- `shared/memory/user-preferences.md`
-- `shared/memory/formal-writing-memory.md`
+- `claude/memory/README.md`
+- `claude/memory/workspace-memory.md`
+- `claude/memory/user-preferences.md`
+- `claude/memory/formal-writing-memory.md`
 
 ## 规则
 
-- 长期偏好写入 `shared/memory/user-preferences.md`
-- 工作区长期规则性知识写入 `shared/memory/workspace-memory.md`
+- 长期偏好写入 `claude/memory/user-preferences.md`
+- 工作区长期规则性知识写入 `claude/memory/workspace-memory.md`
 - 模块经验写入对应模块 memory 文件
 - 不要把 `tmp/`、聊天消息、一次性草稿当作长期记忆

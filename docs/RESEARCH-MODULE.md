@@ -9,15 +9,15 @@
 ## 在 `project` 中的主位置
 
 - workflow:
-  - `shared/workflows/research.md`
+  - `claude/workflows/research.md`
 - shared skills:
-  - `shared/skills/research/`
+  - `claude/skills/research/`
 - shared subagents:
-  - `shared/subagents/researcher.md`
+  - `claude/agents/researcher.md`
 - playbook:
-  - `shared/playbooks/research-playbook.md`
+  - `claude/playbooks/research-playbook.md`
 - memory:
-  - `shared/memory/research-memory.md`
+  - `claude/memory/research-memory.md`
 - example:
   - `examples/research/README.md`
   - `examples/research/SOURCE-MAP.md`

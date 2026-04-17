@@ -7,23 +7,23 @@
 ## 共享来源
 
 - workflow:
-  - `shared/workflows/formal-writing.md`
+  - `claude/workflows/formal-writing.md`
 - 模块说明:
   - `docs/FORMAL-WRITING-MODULE.md`
 - skills:
-  - `shared/skills/internal-comms/`
-  - `shared/skills/official-doc-format/`
-  - `shared/skills/humanizer-zh/`
+  - `claude/skills/internal-comms/`
+  - `claude/skills/official-doc-format/`
+  - `claude/skills/humanizer-zh/`
 - playbooks:
-  - `shared/playbooks/formal-writing-playbook.md`
-  - `shared/playbooks/formal-writing-validation-set.md`
-  - `shared/playbooks/formal-writing-openai-workflow.md`
-  - `shared/playbooks/formal-writing-prompt-architecture.md`
-  - `shared/playbooks/formal-writing-skill-routing.md`
+  - `claude/playbooks/formal-writing-playbook.md`
+  - `claude/playbooks/formal-writing-validation-set.md`
+  - `claude/playbooks/formal-writing-openai-workflow.md`
+  - `claude/playbooks/formal-writing-prompt-architecture.md`
+  - `claude/playbooks/formal-writing-skill-routing.md`
 - template:
-  - `shared/templates/formal-writing-request-template.md`
+  - `claude/templates/formal-writing-request-template.md`
 - memory:
-  - `shared/memory/formal-writing-memory.md`
+  - `claude/memory/formal-writing-memory.md`
 
 ## Claude 路径
 

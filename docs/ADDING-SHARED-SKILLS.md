@@ -8,7 +8,7 @@
 
 先建立共享 skill：
 
-- `shared/skills/<skill-name>/SKILL.md`
+- `claude/skills/<skill-name>/SKILL.md`
 
 这个文件应说明：
 

@@ -19,7 +19,7 @@ Prioritize:
 
 - OpenAI documentation lookups when current guidance matters
 - GitHub when repository or PR context matters
-- file memory in `../../shared/memory/` for durable project knowledge
+- file memory in `../../claude/memory/` for durable project knowledge
 
 Add heavier integrations only when a task actually needs them.
 
@@ -38,4 +38,4 @@ It is not the center of the capability.
 
 Do not move shared capability logic into MCP config files.
 
-Do not store long-term project memory only in ephemeral runtime state when it should live in `shared/memory/`.
+Do not store long-term project memory only in ephemeral runtime state when it should live in `claude/memory/`.

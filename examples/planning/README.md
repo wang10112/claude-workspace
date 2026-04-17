@@ -7,15 +7,15 @@
 ## 共享来源
 
 - skill:
-  - `shared/skills/planning/`
+  - `claude/skills/planning/`
 - 模块说明:
   - `docs/PLANNING-MODULE.md`
 - subagent:
-  - `shared/subagents/planner.md`
+  - `claude/subagents/planner.md`
 - playbook:
-  - `shared/playbooks/planning-playbook.md`
+  - `claude/playbooks/planning-playbook.md`
 - memory:
-  - `shared/memory/planning-memory.md`
+  - `claude/memory/planning-memory.md`
 
 ## Claude 路径
 

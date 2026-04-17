@@ -59,10 +59,10 @@
 
 **实施**：
 ```
-shared/skills/testing/
-shared/workflows/testing.md
-shared/playbooks/testing-playbook.md
-shared/memory/testing-memory.md
+claude/skills/testing/
+claude/workflows/testing.md
+claude/playbooks/testing-playbook.md
+claude/memory/testing-memory.md
 claude/skills/testing/
 ```
 
@@ -79,8 +79,8 @@ claude/skills/testing/
 
 **实施**：
 ```
-shared/skills/debugging/
-shared/workflows/debugging.md
+claude/skills/debugging/
+claude/workflows/debugging.md
 claude/skills/debugging/
 ```
 
@@ -97,8 +97,8 @@ claude/skills/debugging/
 
 **实施**：
 ```
-shared/skills/refactoring/
-shared/workflows/refactoring.md
+claude/skills/refactoring/
+claude/workflows/refactoring.md
 claude/skills/refactoring/
 ```
 

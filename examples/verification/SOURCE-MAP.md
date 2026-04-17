@@ -8,12 +8,12 @@
 
 | 能力面 | 当前位置 |
 |---|---|
-| verification workflow | `shared/workflows/verification.md` |
-| verification skill | `shared/skills/verification/SKILL.md` |
-| verifier role | `shared/subagents/verifier.md` |
+| verification workflow | `claude/workflows/verification.md` |
+| verification skill | `claude/skills/verification/SKILL.md` |
+| verifier role | `claude/subagents/verifier.md` |
 | module doc | `docs/VERIFICATION-MODULE.md` |
-| playbook | `shared/playbooks/verification-playbook.md` |
-| memory | `shared/memory/verification-memory.md` |
+| playbook | `claude/playbooks/verification-playbook.md` |
+| memory | `claude/memory/verification-memory.md` |
 | example | `examples/verification/README.md` |
 
 ## 结论

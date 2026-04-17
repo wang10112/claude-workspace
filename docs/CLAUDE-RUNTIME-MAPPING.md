@@ -31,7 +31,7 @@
 
 - 根级 `AGENTS.md`
 - 根级 `RULES.md`
-- `shared/`
+- `claude/`
 - `examples/`
 - `docs/`
 
@@ -39,7 +39,7 @@
 
 如果未来需要把 `claude/` 的某些内容更贴近真实运行环境：
 
-1. 保持能力定义仍在 `shared/`
+1. 保持能力定义在 `claude/`
 2. 只迁移 Claude 专属 wrapper 或配置
 3. 保留它与共享来源之间的关系说明
 

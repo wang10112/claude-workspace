@@ -8,11 +8,11 @@
 
 | 能力面 | 当前位置 |
 |---|---|
-| planning skill | `shared/skills/planning/SKILL.md` |
-| planner role | `shared/subagents/planner.md` |
+| planning skill | `claude/skills/planning/SKILL.md` |
+| planner role | `claude/subagents/planner.md` |
 | module doc | `docs/PLANNING-MODULE.md` |
-| playbook | `shared/playbooks/planning-playbook.md` |
-| memory | `shared/memory/planning-memory.md` |
+| playbook | `claude/playbooks/planning-playbook.md` |
+| memory | `claude/memory/planning-memory.md` |
 | example | `examples/planning/README.md` |
 
 ## 结论
